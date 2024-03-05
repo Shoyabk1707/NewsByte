@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsBite</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="dark-mode.css"> -->
+</head>
+<body>
+
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#">
+                <div class="logo">NewsByte</div>
+            </a>
+            <div class="search-bar">
+                <input type="text" class="news-input" id="search-text" placeholder="Search for News">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <div class="news-links">
+        <ul class="links flex container">
+            <li class="hover-links nav-items" id="education" onclick="onNavItemClick('trending')">Trending</li>
+            <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('India')">India</li>
+            <li class="hover-links nav-items" id="politics" onclick="onNavItemClick('Crypto')">Crypto</li>
+            <li class="hover-links nav-items" id="career" onclick="onNavItemClick('Entertainment')">Entertainment</li>
+            <li class="hover-links nav-items" id="Tech" onclick="onNavItemClick('IPL')">IPL</li>
+            <li class="hover-links nav-items" id="Sports" onclick="onNavItemClick('Stocks')">Stocks</li>
+            <li class="hover-links nav-items" id="education" onclick="onNavItemClick('education')">Education</li>
+            <li class="hover-links nav-items" id="finance" onclick="onNavItemClick('Finance')">Finance</li>
+            <li class="hover-links nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            <li class="hover-links nav-items" id="career" onclick="onNavItemClick('career')">Career</li>
+            <li class="hover-links nav-items" id="Tech" onclick="onNavItemClick('Tech')">Tech</li>
+            <li class="hover-links nav-items" id="Sports" onclick="onNavItemClick('Web Seriess')">Web Series</li>
+
+        </ul>
+    </div>
+<hr class="container">
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 2982749y4</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem asperiores, reprehenderit sapiente voluptate repudiandae consectetur necessitatibus esse dolorem laborum ipsum?</p>
+            </div>
+        </div>
+    </template>
+
+    <div class="news-letter">
+        <div class="cover container">
+            <div class="left">
+                <h2>Subscribe For New Content</h2>
+                <h4>By Becoming A Member Of Our Newsletter, You Are Aware Of Trending News</h4>
+            </div>
+            <div class="right">
+                <span id="email">Email</span>
+                <div class="email-div">
+                        <div class="email-sec"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i><input type="email" name="" id="mail" placeholder="Enter Your Email"> <Button class="subscribe">Subcribe</Button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <center><div class="f-logo">N e w s B y t e</div></center>
+        <center><p>A Product of Alpha Society</p></center>
+    </footer> 
+     
+    <script src="https://kit.fontawesome.com/0bbe51d68f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

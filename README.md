@@ -1,6 +1,6 @@
 # NewsByte - Simplify Your News Consumption
 
-NewsByte is a lightweight and user-friendly news website that allows you to stay informed about the latest news from various sources. It's built with HTML, CSS, and JavaScript and utilizes the NewsAPI (https://newsapi.org) to fetch real-time news data.
+NewsByte is a lightweight and user-friendly news website that allows you to stay informed about the latest news from various sources. It's built with HTML, CSS, and JavaScript and utilizes the TheNewsAPI (https://thenewsapi.com) to fetch real-time news data.
 
 ![newsBite Screenshot](ScreenShot/snapshot.jpg)
 
@@ -23,7 +23,7 @@ To run newsBite locally, follow these simple steps:
 4. Open the index.html file in your preferred web browser.
 
 ## Dependencies
-NewsAPI - The API used to fetch news data.
+TheNewsAPI (https://thenewsapi.com) - The API used to fetch news data.
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to NewsByte, please follow these steps:
@@ -38,7 +38,7 @@ Contributions are welcome! If you'd like to contribute to NewsByte, please follo
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
-NewsAPI for providing real-time news data.
+TheNewsAPI for providing real-time news data.
 
 ## Contact
 If you have any questions or suggestions, feel free to reach out to us at [email](`shoyabmansuri916@gmail.com`).

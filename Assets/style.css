@@ -1,47 +1,46 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap";
+
+@import "https://fonts.googleapis.com/css2?family=Changa:wght@300;400;600&display=swap";
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
-/* Creating variables */
 :root {
     --primary-text-color: #2c0c12;
     --secondary-text-color: #7e7e7e;
     --accent-color: #2294ed;
-    ---accent-color-dark: #1d69a3;
+    ---accent-color-dark: #1d69a3
 }
 
 body {
     font-family: "Poppins", sans-serif;
-    color: var(--primary-text-color);
+    color: var(--primary-text-color)
 }
 
 p {
     font-family: "Roboto", sans-serif;
     color: var(--secondary-text-color);
-    line-height: 1.4rem;
+    line-height: 1.4rem
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 ul {
     list-style: none;
-    font-weight: 500;
+    font-weight: 500
 }
 
 .flex {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .popup {
-    /* display: none;  */
     position: fixed;
     z-index: 1;
     left: 0;
@@ -49,122 +48,113 @@ ul {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #000;
+    background-color: #0006
 }
 
 .popup-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    background-color: rgb(238, 0, 0);
-    /* border: 1px solid #000000; */
+    background-color: #e00;
     width: 40%;
     border-radius: 15px;
-    height: 50%;
+    height: 50%
 }
 
 .center {
     margin: auto;
     width: 60%;
-
-    /* border: 3px solid green; */
-    /* padding: 10px; */
-    align-items: center;
+    align-items: center
 }
 
 .pop-content {
-    /* margin-top: 20%; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    /* justify-content: space-around; */
-    margin-top: 20px;
+    margin-top: 20px
 }
-
-.pop-content img {}
 
 .pp-cnt {
     font-size: 20px;
     width: 70%;
     text-align: center;
-    /* margin-bottom: 30px; */
-    color: #e1e1e1;
+    color: #e1e1e1
 }
 
 .close {
-    color: #ffffff;
+    color: #fff;
     float: right;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #000;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .container {
     max-width: 1180px;
     margin-inline: auto;
-    overflow: hidden;
+    overflow: hidden
 }
 
 nav {
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
     box-shadow: 0 0 4px #bbd0e2;
     position: fixed;
     top: 0;
     z-index: 99;
     left: 0;
-    right: 0;
+    right: 0
 }
 
 .marq {
-    display: none;
+    display: none
 }
 
 .main-nav {
     justify-content: space-between;
-    padding-block: 8px;
+    padding-block: 8px
 }
 
 .logo {
     font-size: 1.8rem;
     font-weight: 400;
     font-family: "Changa", sans-serif;
-    color: rgb(238, 0, 0);
+    color: #e00
 }
 
 .logo:hover {
-    color: black;
-    border-bottom: 4px solid red;
+    color: #000;
+    border-bottom: 4px solid red
 }
 
 .nav-links ul {
-    gap: 16px;
+    gap: 16px
 }
 
 .hover-links {
     cursor: pointer;
     overflow: visible;
-    display: inline-block;
+    display: inline-block
 }
 
 .hover-links:hover {
-    color: rgb(253, 33, 33);
+    color: #fd2121
 }
 
 .nav-item.active {
-    color: var(--accent-color);
+    color: var(--accent-color)
 }
 
 .search-bar {
     height: 32px;
-    gap: 8px;
+    gap: 8px
 }
 
 .news-input {
@@ -173,47 +163,41 @@ nav {
     height: 100%;
     padding-inline: 12px;
     border-radius: 4px;
-    border: 2px solid #8d8d8d;
+    border: 2px solid #8d8d8d
 }
 
 .search-button {
-    /* background-color: var(--accent-color); */
-    background-color: rgb(230, 3, 3);
+    background-color: #e60303;
     font-family: "Roboto", sans-serif;
-    color: white;
+    color: #fff;
     padding: 8px 24px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .search-button:hover {
-    /* background-color: var(---accent-color-dark); */
-    background-color: rgb(253, 33, 33);
+    background-color: #fd2121
 }
 
 .news-links {
-    /* background-color: rgb(230, 230, 230); */
     margin-top: 80px;
-    height: 35px;
+    height: 35px
 }
 
 .links {
-    /* justify-content: space-between; */
-    gap: 40px;
+    gap: 40px
 }
 
 main {
-    /* background-color: rgba(0, 0, 0, 0.253); */
-    padding-block: 20px;
-    /* margin-top: 10px; */
+    padding-block: 20px
 }
 
 .cards-container {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
-    align-items: start;
+    align-items: start
 }
 
 .card {
@@ -226,79 +210,69 @@ main {
     padding-bottom: 10px;
     background-color: #fff;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all .3s ease
 }
 
 .card:hover {
-    /* box-shadow: 1px 2px 8px #9caebd; */
     box-shadow: 1px 2px 8px #d6a3a3e7;
-    /* background-color: #f9fdff; */
     background-color: #fff5f581;
-    /* transform: translateY(-2px); */
-    scale: 1.01;
+    scale: 1.01
 }
 
 .card-header img {
     width: 100%;
     height: 180px;
-    object-fit: cover;
+    object-fit: cover
 }
 
 .card-content {
-    padding: 12px;
+    padding: 12px
 }
 
 .news-source {
-    margin-block: 12px;
+    margin-block: 12px
 }
 
 .news-letter {
-    background-color: rgba(216, 0, 0, 0.973);
+    background-color: #d80000f8
 }
 
 .cover {
     height: 200px;
-    /* background-color: rgba(216, 0, 0, 0.932); */
-    display: flex;
+    display: flex
 }
 
 .left {
-    /* background-color: grey; */
-    margin: auto auto;
+    margin: auto;
     width: 45%;
-    margin-left: 50px;
+    margin-left: 50px
 }
 
 .left h2 {
-    color: white;
+    color: #fff;
     font-family: "Poppins", sans-serif;
-    font-size: 2rem;
+    font-size: 2rem
 }
 
 .left h4 {
-    color: rgba(235, 235, 235, 0.507);
+    color: #ebebeb81;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 300
 }
 
 .right {
-    /* background-color: grey; */
     margin: auto;
     width: 30%;
-    margin-right: 50px;
+    margin-right: 50px
 }
 
 #email {
-    color: rgb(211, 211, 211);
-    margin-left: 10px;
+    color: #d3d3d3;
+    margin-left: 10px
 }
 
 .email-div {
-    /* background-color: #8d8d8d; */
-    /* height: 40px;
-    width: 300px;*/
-    display: flex;
-    /*border-radius: 20px; */
+    display: flex
 }
 
 .email-sec {
@@ -307,11 +281,11 @@ main {
     width: 350px;
     display: flex;
     border-radius: 30px;
-    margin-top: 10px;
+    margin-top: 10px
 }
 
 .email-sec i {
-    margin: 14px 5px 0 15px;
+    margin: 14px 5px 0 15px
 }
 
 #mail {
@@ -320,91 +294,78 @@ main {
     margin: 7px 10px 0 0;
     border: none;
     outline: none;
-    /* border-bottom: 1px solid #ccc; */
     background: transparent;
-    color: rgb(255, 255, 255);
+    color: #fff;
     padding: 5px;
-    font-size: 0.9rem;
+    font-size: .9rem
 }
 
 .subscribe {
     width: 100px;
     height: 30px;
-    margin-left: 10px;
     margin: 7px 10px 0 0;
-    color: rgb(255, 0, 0);
-    background-color: #ffffff;
+    color: red;
+    background-color: #fff;
     border-radius: 20px;
     border: none;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif
 }
 
 .subscribe:hover {
-    cursor: pointer;
+    cursor: pointer
 }
-
-/* #mail:focus{
-    border:none;
-} */
 
 footer {
     height: 100px;
-    margin-bottom: 10px;
-    /* background-color: rgba(128, 128, 128, 0.397); */
-    /* background-color: rgba(216, 0, 0, 0.932); */
+    margin-bottom: 10px
 }
 
 .f-logo {
-    color: rgba(216, 0, 0, 0.932);
+    color: #d80000ee;
     padding-top: 10px;
     font-size: 3rem;
     font-weight: 400;
-    font-family: "Changa", sans-serif;
+    font-family: "Changa", sans-serif
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.3rem
     }
 
     .main-nav {
-        padding: 15px 15px;
+        padding: 15px
     }
 
     .news-input {
-        width: 150px;
+        width: 150px
     }
 
     .search-button {
-        padding: 8px 20px;
+        padding: 8px 20px
     }
 
     .news-links {
-        padding: 0 10px;
-        /* width: 200px; */
-        /* align-self: center; */
+        padding: 0 10px
     }
 
     li {
-        margin: 0 10px;
+        margin: 0 10px
     }
 
     .marq {
-        display: block;
+        display: block
     }
 
     .show-marq {
-        display: none;
+        display: none
     }
 
     .cards-container {
-        /* flex-direction: column; */
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 10px
     }
 
     .card {
@@ -412,42 +373,38 @@ footer {
         border-radius: 10px;
         width: 300px;
         min-height: 400px;
-        max-height: 400px;
+        max-height: 400px
     }
 
     .cover {
         display: flex;
         flex-direction: column;
         margin-top: 10px;
-        padding: 10px 0;
+        padding: 10px 0
     }
 
     .left {
-        /* background-color: grey; */
-        margin: auto auto;
+        margin: auto;
         width: 80%;
-        text-align: center;
-        /* margin-left:50px; */
+        text-align: center
     }
 
     .left h2 {
-        color: white;
+        color: #fff;
         font-family: "Poppins", sans-serif;
-        font-size: 1.3rem;
+        font-size: 1.3rem
     }
 
     .left h4 {
-        color: rgba(235, 235, 235, 0.507);
+        color: #ebebeb81;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 1rem
     }
 
     .right {
-        /* background-color: grey; */
-        margin: auto auto;
-        width: 70%;
-        /* margin-right: 10%; */
+        margin: auto;
+        width: 70%
     }
 
     .email-sec {
@@ -455,25 +412,48 @@ footer {
         height: 40px;
         width: 300px;
         display: flex;
-        border-radius: 30px;
+        border-radius: 30px
     }
 
     .subscribe {
         width: 100px;
         height: 25px;
-        margin-left: 10px;
         margin: 7px 9px 0 0;
-        color: rgb(255, 0, 0);
-        background-color: #ffffff;
+        color: red;
+        background-color: #fff;
         border-radius: 15px;
-        font-size: 0.7rem;
+        font-size: .7rem
     }
+
     footer {
         height: 70px;
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
     .f-logo {
-        font-size: 2rem;
+        font-size: 2rem
+    }
+
+    .popup-content {
+        margin: 50% auto;
+        width: 80%;
+    }
+
+    .pop-content {
+        margin-top: 50px
+    }
+
+    .pp-cnt {
+        font-size: 16px;
+        width: 90%
+    }
+
+    .popup .email-sec {
+        width: 90%
+    }
+
+    .popup #mail {
+        width: 80%;
+        font-size: .8rem
     }
 }
